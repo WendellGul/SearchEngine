@@ -241,11 +241,11 @@ def remove_enter(record):
 
 
 def get_hot_news(write_path=HOTTESTED_NEWS_PATH):
-    db = pymysql.connect(host='alimysql.gregchan.cn',
-                         user='root',
-                         password='UCASir2017',
-                         db='ir2017',
-                         port=3306,
+    db = pymysql.connect(host='host',
+                         user='user',
+                         password='pwd',
+                         db='db',
+                         port='port',
                          charset='utf8')
     cursor = db.cursor()
     hot_news = []
